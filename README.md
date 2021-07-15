@@ -32,7 +32,7 @@ Install library for support vector machines (This used in cascade ensemble learn
 
 Install ComBat harmonization in Matlab from here: [Download](https://github.com/Jfortin1/ComBatHarmonization/tree/master/Matlab) 
 
-Install the MALSAR (Multi-tAsk Learning via StructurAl Regularization) package which includes the MTL learning algorithms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from here: [Download](http://jiayuzhou.github.io/MALSAR/) 
+Install the MALSAR (Multi-tAsk Learning via StructurAl Regularization) package which includes the MTL learning algorithms from here: [Download](http://jiayuzhou.github.io/MALSAR/) 
 
 The directory containing data can be added to the Matlab path as follows:
 ```matlab
