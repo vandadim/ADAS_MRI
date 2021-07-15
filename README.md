@@ -19,5 +19,6 @@ Alzheimer’s Disease (AD) is a chronic neurodegenerative disorder that occurs a
 (1) single-task learning.  
 (2) multi-task learning. 
 
+<img src="Images/SINGLE_MULTI_NEW.png" width="700">
 
-In single-task learning  (STL), the disease progression of each individual group is predicted at different time-points independently.
+In single-task learning (STL), the disease progression of each individual group is predicted at different time-points independently.
