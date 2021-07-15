@@ -38,10 +38,17 @@ The directory containing data can be added to the Matlab path as follows:
 ```matlab
 Datapath = '/path/to/the/data/folder';
 ```
-In addition, the directory containing those packages can be added to the Matlab path as follows:
+In addition, the directory containing the mentioned packages can be added to the Matlab path as follows:
 
 ```matlab
-Datapath = '/path/to/the/data/folder';
+addpath('../glmnet_matlab/');
+addpath('../libsvm-3.22/matlab/');
+addpath('../scripts/');
+
+% Multi-Task Learning
+
+addpath('../MALSAR/functions/');
+addpath('../MALSAR/utils/');
 ```
 
 ## Single-Task learning
