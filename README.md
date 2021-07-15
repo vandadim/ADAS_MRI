@@ -1,3 +1,23 @@
 # ADAS_MRI (Single-task learning Vs Multi-task learning)
-A Matlab implementation for predicting the change of ADAS scores using brain MRI with single and multi-task learning. 
-Comparison of single and multi-tasklearning for predicting cognitive declinebased on MRI data.
+
+# Comparison of single and multi-tasklearning for predicting cognitive declinebased on MRI data. <br/> 
+
+A Matlab implementation for predicting the change of ADAS scores using brain MRI with single and multi-task learning. In the present work, we compared single- and multi-task learning approaches to predict the changes in ADAS-Cog scores based on T1-weighted anatomical magnetic resonance imaging (MRI). In contrast to most machine learning-based methods to predict the changes in ADAS-Cog, we stratified the subjects based on their baseline diagnoses and evaluated the prediction performances in each group.
+
+**Maintainer:** Vandad Imani, (Email:vandad.imani@uef.fi)<br/> 
+
+
+**TABLE OF CONTENTS**
+===================================
+* [1.&nbsp;&nbsp;Introduction.](#introduction)
+* 2.&nbsp;&nbsp;Software implementations.
+
+
+
+# INTRODUCTION
+Alzheimer’s Disease (AD) is a chronic neurodegenerative disorder that occurs among the elderly. AD's pathophysiological changes begin many years before clinical manifestations of disease and the spectrum of AD spans from clinically asymptomatic to severely impaired. Because of this, there is an appreciation that AD should not only be viewed with discrete and defined clinical stages but as a multifaceted process moving along a continuum. Therefore, early prediction of disease progression would be a crucial step towards designing proper therapeutic, unburden the health care system, and preventing adverse events caused by AD. Due to this reason predicting ADAS-Cog scores with machine learning in order to monitor and quantify patient conditions has been gaining research interest. These progression models come into two categories:  
+(1) single-task learning.  
+(2) multi-task learning. 
+
+
+In single-task learning  (STL), the disease progression of each individual group is predicted at different time-points independently.
