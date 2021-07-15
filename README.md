@@ -16,8 +16,8 @@ A Matlab implementation for predicting the change of ADAS scores using brain MRI
 
 # INTRODUCTION
 Alzheimer’s Disease (AD) is a chronic neurodegenerative disorder that occurs among the elderly. AD's pathophysiological changes begin many years before clinical manifestations of disease and the spectrum of AD spans from clinically asymptomatic to severely impaired. Because of this, there is an appreciation that AD should not only be viewed with discrete and defined clinical stages but as a multifaceted process moving along a continuum. Therefore, early prediction of disease progression would be a crucial step towards designing proper therapeutic, unburden the health care system, and preventing adverse events caused by AD. Due to this reason predicting ADAS-Cog scores with machine learning in order to monitor and quantify patient conditions has been gaining research interest. These progression models come into two categories:  
-(1) [single-task learning.](Matlab/Single-Task/)  
-(2) [multi-task learning.](Matlab/Multi-task/) 
+(1) [Single-task learning.](Matlab/Single-Task/)  
+(2) [Multi-task learning.](Matlab/Multi-task/) 
 
 <img src="Images/SINGLE_MULTI_NEW.png" width="700">
 
@@ -30,9 +30,18 @@ Install Lasso and elastic-net regularized generalized linear models (Glmnet) fro
 
 Install library for support vector machines (This used in cascade ensemble learning method) from here: [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) 
 
-Install the MALSAR (Multi-tAsk Learning via StructurAl Regularization) package which includes the MTL learning algorithms from here: [Download](http://jiayuzhou.github.io/MALSAR/) 
+Install the MALSAR (Multi-tAsk Learning via StructurAl Regularization) package which includes the MTL learning algorithms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from here: [Download](http://jiayuzhou.github.io/MALSAR/) 
 
 ## Single-Task learning
+
+### [ALL-EN]()
+
+### Cascade Ensemble Learning 
+#### Data Harmonization
+
+
+
+
 
 
 
