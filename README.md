@@ -43,26 +43,31 @@ In addition, the directory containing the mentioned packages can be added to the
 ```matlab
 addpath('../glmnet_matlab/');
 addpath('../libsvm-3.22/matlab/');
-addpath('../scripts/');
+addpath('../ComBatHarmonization/scripts/');
 
 % Multi-Task Learning
-
 addpath('../MALSAR/functions/');
 addpath('../MALSAR/utils/');
 ```
 
 ## Single-Task learning
 
-### [ALL-EN](Matlab/Single-task/ALL-EN)
+- [ALL-EN](Matlab/Single-task/ALL-EN)
 
-### Data Harmonization
-- [ComBat+ALL-EN](Matlab/Single-task/Data%20Harmonization/ComBat+ALL-EN) 
+- Data Harmonization
+   - [ComBat+ALL-EN](Matlab/Single-task/Data%20Harmonization/ComBat+ALL-EN)
+                  
+                  ```matlab
+                  addpath /research/work/marziez/CatSegmentation_auto/adasScore_ADNImgs/toolboxs/libsvm-3.22/libsvm-3.22/matlab/
+                  ```
+   - [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning)  
+    
+    
 ```matlab
 addpath /research/work/marziez/CatSegmentation_auto/adasScore_ADNImgs/toolboxs/libsvm-3.22/libsvm-3.22/matlab/
 
 ```
-hjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-- [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning) 
+    - [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning) 
 
 
 
