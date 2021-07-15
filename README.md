@@ -24,4 +24,17 @@ Alzheimer’s Disease (AD) is a chronic neurodegenerative disorder that occurs a
 Single-task learning (STL), the disease progression of each individual group is predicted at different time-points independently (Figure A).
 Multi-task learning (MTL), utilizes the essential similarities among various related tasks to predict disease progression. It improves the generalization performance by solving multiple learning tasks simultaneously while exploiting commonalities and differences across tasks (Figure B). 
 
-# implementations
+# IMPLEMENTATIONS
+### Usage:
+Install Lasso and elastic-net regularized generalized linear models from here: [Download](https://web.stanford.edu/~hastie/glmnet_matlab/download.html)
+
+Install library for support vector machines (This used in cascade ensemble learning method) from here: [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) 
+
+## Single-Task learning
+
+
+
+
+
+
+## Multi-Task learning
