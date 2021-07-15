@@ -25,10 +25,12 @@ Single-task learning (STL), the disease progression of each individual group is 
 Multi-task learning (MTL), utilizes the essential similarities among various related tasks to predict disease progression. It improves the generalization performance by solving multiple learning tasks simultaneously while exploiting commonalities and differences across tasks (Figure B). 
 
 # IMPLEMENTATIONS
-### Usage:
-Install Lasso and elastic-net regularized generalized linear models from here: [Download](https://web.stanford.edu/~hastie/glmnet_matlab/download.html)
+## Usage:
+Install Lasso and elastic-net regularized generalized linear models (Glmnet) from here: [Download](https://web.stanford.edu/~hastie/glmnet_matlab/download.html)
 
 Install library for support vector machines (This used in cascade ensemble learning method) from here: [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) 
+
+Install the MALSAR (Multi-tAsk Learning via StructurAl Regularization) package which includes the MTL learning algorithms from here: [Download](http://jiayuzhou.github.io/MALSAR/) 
 
 ## Single-Task learning
 
