@@ -38,8 +38,10 @@ Install the MALSAR (Multi-tAsk Learning via StructurAl Regularization) package w
 
 ### [ALL-EN](Matlab/Single-task/ALL-EN)
 
-### [Cascade Ensemble Learning](Matlab/Single-task/Cascade%20Ensemble%20Learning%20(Data%20harmonization)) 
-#### Data Harmonization
+### Data Harmonization
+#### [ComBat+ALL-EN](Matlab/Single-task/Cascade%20Ensemble%20Learning%20(Data%20harmonization)) 
+#### [Cascade Ensemble Learning](Matlab/Single-task/Cascade%20Ensemble%20Learning%20(Data%20harmonization)) 
+
 
 
 
