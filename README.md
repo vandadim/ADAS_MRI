@@ -25,7 +25,7 @@ Single-task learning (STL), the disease progression of each individual group is 
 Multi-task learning (MTL), utilizes the essential similarities among various related tasks to predict disease progression. It improves the generalization performance by solving multiple learning tasks simultaneously while exploiting commonalities and differences across tasks (Figure B). 
 
 # IMPLEMENTATIONS
-## Usage:
+## Package Usage:
 Install Lasso and elastic-net regularized generalized linear models (Glmnet) from here: [Download](https://web.stanford.edu/~hastie/glmnet_matlab/download.html)
 
 Install library for support vector machines (This used in cascade ensemble learning method) from here: [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) 
@@ -34,13 +34,28 @@ Install ComBat harmonization in Matlab from here: [Download](https://github.com/
 
 Install the MALSAR (Multi-tAsk Learning via StructurAl Regularization) package which includes the MTL learning algorithms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from here: [Download](http://jiayuzhou.github.io/MALSAR/) 
 
+The directory containing data can be added to the Matlab path as follows:
+```matlab
+Datapath = '/path/to/the/data/folder';
+```
+In addition, the directory containing those packages can be added to the Matlab path as follows:
+
+```matlab
+Datapath = '/path/to/the/data/folder';
+```
+
 ## Single-Task learning
 
 ### [ALL-EN](Matlab/Single-task/ALL-EN)
 
 ### Data Harmonization
-#### [ComBat+ALL-EN](Matlab/Single-task/Data%20Harmonization/ComBat+ALL-EN) 
-#### [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning) 
+- [ComBat+ALL-EN](Matlab/Single-task/Data%20Harmonization/ComBat+ALL-EN) 
+```matlab
+addpath /research/work/marziez/CatSegmentation_auto/adasScore_ADNImgs/toolboxs/libsvm-3.22/libsvm-3.22/matlab/
+
+```
+hjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+- [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning) 
 
 
 
