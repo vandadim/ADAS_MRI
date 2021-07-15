@@ -30,6 +30,8 @@ Install Lasso and elastic-net regularized generalized linear models (Glmnet) fro
 
 Install library for support vector machines (This used in cascade ensemble learning method) from here: [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) 
 
+Install ComBat harmonization in Matlab from here: [Download](https://github.com/Jfortin1/ComBatHarmonization/tree/master/Matlab) 
+
 Install the MALSAR (Multi-tAsk Learning via StructurAl Regularization) package which includes the MTL learning algorithms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from here: [Download](http://jiayuzhou.github.io/MALSAR/) 
 
 ## Single-Task learning
