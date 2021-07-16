@@ -90,7 +90,7 @@ addpath('../MALSAR/utils/');
          ALL_EN(Datapath,Harmonization)     
      ```
      
-- [Cascade Ensemble Learning](Matlab/Single-task/Cascade Ensemble Learning) 
+- [Cascade Ensemble Learning](Matlab/Single-task/Cascade%20Ensemble%20Learning/) 
 
     
 
