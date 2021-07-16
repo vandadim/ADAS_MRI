@@ -53,6 +53,7 @@ addpath('../MALSAR/utils/');
 ## Single-Task learning
 
 - [ALL-EN](Matlab/Single-task/ALL-EN)
+   - Without Harmonization
    ```matlab
    % OUTPUT          : 
    % Results         : 'results','results_NC','results_MCI','results_AD','cor','MAE','cor_s','CorNC','CorMCI','CorAD','MAE_NC','MAE_MCI','MAE_AD'
@@ -64,28 +65,28 @@ addpath('../MALSAR/utils/');
    %--------------------------------------------------------------------------------------------------------------------------------------------
    Datapath       = '/path/to/the/data/folder';
    Harmonization  = 0;
+   Covariate      = 0;
    ALL_EN(Datapath,Harmonization,Covariate)
    
    ```
-
-- [Data Harmonization](Matlab/Single-task/Data%20Harmonization)
    - [ComBat+ALL-EN](Matlab/Single-task/Data%20Harmonization/ComBat+ALL-EN)
    
      ```matlab
         Datapath       = '/path/to/the/data/folder';
         Harmonization  = 1;
+        Covariate      = 0; Or 1
         ALL_EN(Datapath,Harmonization,Covariate)
    
       ```                  
-   - [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning)
+   - [PLS-Based Domain adaptation](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning)
 
      ```matlab     
          Datapath       = '/path/to/the/data/folder';
          Harmonization  = 2;
-         Cas_EN(Datapath,Harmonization)
-     
+         Covariate      = 0; Or 1
+         ALL_EN(Datapath,Harmonization)     
      ```
-    
+- [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning)    
 
 
 
