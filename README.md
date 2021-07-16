@@ -69,7 +69,7 @@ addpath('../MALSAR/utils/');
    ALL_EN(Datapath,Harmonization,Covariate)
    
    ```
-   - [ComBat+ALL-EN](Matlab/Single-task/Data%20Harmonization/ComBat+ALL-EN)
+   - [ComBat+ALL-EN](Matlab/Single-task/ALL-EN)
    
      ```matlab
         Datapath       = '/path/to/the/data/folder';
@@ -78,7 +78,7 @@ addpath('../MALSAR/utils/');
         ALL_EN(Datapath,Harmonization,Covariate)
    
       ```                  
-   - [PLS-Based Domain adaptation](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning)
+   - [PLS-Based Domain adaptation](Matlab/Single-task/ALL-EN)
 
      ```matlab     
          Datapath       = '/path/to/the/data/folder';
