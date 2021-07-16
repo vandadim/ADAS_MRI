@@ -59,11 +59,12 @@ addpath('../MALSAR/utils/');
    % INPUT           :
    % Datapath        : The directory containing data
    % Harmonization   : 0- Without data monization, 1- ComBat harmonization, 2- PLS-based domain adaptation  
+   % Covariate       : 0- Without considering Age as covariate, 1-With considering Age as covariate
    %--------------------------------------------------------------------------------------------------------------------------------------------
    %--------------------------------------------------------------------------------------------------------------------------------------------
    Datapath       = '/path/to/the/data/folder';
    Harmonization  = 0;
-   ALL_EN(Datapath,Harmonization)
+   ALL_EN(Datapath,Harmonization,Covariate)
    
    ```
 
@@ -73,7 +74,7 @@ addpath('../MALSAR/utils/');
      ```matlab
         Datapath       = '/path/to/the/data/folder';
         Harmonization  = 1;
-        ALL_EN(Datapath,Harmonization)
+        ALL_EN(Datapath,Harmonization,Covariate)
    
       ```                  
    - [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning)
@@ -81,7 +82,7 @@ addpath('../MALSAR/utils/');
      ```matlab     
          Datapath       = '/path/to/the/data/folder';
          Harmonization  = 2;
-         ALL_EN(Datapath,Harmonization)
+         Cas_EN(Datapath,Harmonization)
      
      ```
     
