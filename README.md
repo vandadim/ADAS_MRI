@@ -89,9 +89,10 @@ addpath('../MALSAR/utils/');
          Covariate      = 0; Or 1
          ALL_EN(Datapath,Harmonization)     
      ```
+     
 - [Cascade Ensemble Learning](Matlab/Single-task/Cascade Ensemble Learning/) 
 
-   We used Elastic-net penalized linear regression along with SVR (EN+SVR) in the learning stage. Where in the first stage, a PLS-based domain adaptation is performed for each brain region separately ,and then, for each brain region, the prediction task is performed. These predictions are then combined in the stacking framework. We applied AAL-atlas to decompose the gray matter density values into 122 distinct regions. For the prediction of the change of ADAS for each brain region, we utilized support vector regression (with a radial basis function kernel). Finally, the per-region predictions were combined using the elastic-net penalized linear regression.    
+    
 
 
 
