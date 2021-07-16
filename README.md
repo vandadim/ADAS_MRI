@@ -53,21 +53,38 @@ addpath('../MALSAR/utils/');
 ## Single-Task learning
 
 - [ALL-EN](Matlab/Single-task/ALL-EN)
+   ```matlab
+   % OUTPUT          : 
+   % Results         : 'results','results_NC','results_MCI','results_AD','cor','MAE','cor_s','CorNC','CorMCI','CorAD','MAE_NC','MAE_MCI','MAE_AD'
+   % INPUT           :
+   % Datapath        : The directory containing data
+   % Harmonization   : 0- Without data monization, 1- ComBat harmonization, 2- PLS-based domain adaptation  
+   %--------------------------------------------------------------------------------------------------------------------------------------------
+   %--------------------------------------------------------------------------------------------------------------------------------------------
+   Datapath       = '/path/to/the/data/folder';
+   Harmonization  = 0;
+   ALL-EN(Datapath,Harmonization)
+   
+   ```
 
-- Data Harmonization
+- [Data Harmonization](Matlab/Single-task/Data%20Harmonization)
    - [ComBat+ALL-EN](Matlab/Single-task/Data%20Harmonization/ComBat+ALL-EN)
-                  
-                  ```matlab
-                  addpath /research/work/marziez/CatSegmentation_auto/adasScore_ADNImgs/toolboxs/libsvm-3.22/libsvm-3.22/matlab/
-                  ```
-   - [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning)  
-    
-    
-```matlab
-addpath /research/work/marziez/CatSegmentation_auto/adasScore_ADNImgs/toolboxs/libsvm-3.22/libsvm-3.22/matlab/
+   
+     ```matlab
+        Datapath       = '/path/to/the/data/folder';
+        Harmonization  = 1;
+        ALL-EN(Datapath,Harmonization)
+   
+      ```                  
+   - [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning)
 
-```
-    - [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning) 
+     ```matlab     
+         Datapath       = '/path/to/the/data/folder';
+         Harmonization  = 2;
+         ALL-EN(Datapath,Harmonization)
+     
+     ```
+    
 
 
 
