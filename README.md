@@ -63,7 +63,7 @@ addpath('../MALSAR/utils/');
    %--------------------------------------------------------------------------------------------------------------------------------------------
    Datapath       = '/path/to/the/data/folder';
    Harmonization  = 0;
-   ALL-EN(Datapath,Harmonization)
+   ALL_EN(Datapath,Harmonization)
    
    ```
 
@@ -73,7 +73,7 @@ addpath('../MALSAR/utils/');
      ```matlab
         Datapath       = '/path/to/the/data/folder';
         Harmonization  = 1;
-        ALL-EN(Datapath,Harmonization)
+        ALL_EN(Datapath,Harmonization)
    
       ```                  
    - [Cascade Ensemble Learning](Matlab/Single-task/Data%20Harmonization/Cascade%20Ensemble%20Learning)
@@ -81,7 +81,7 @@ addpath('../MALSAR/utils/');
      ```matlab     
          Datapath       = '/path/to/the/data/folder';
          Harmonization  = 2;
-         ALL-EN(Datapath,Harmonization)
+         ALL_EN(Datapath,Harmonization)
      
      ```
     
