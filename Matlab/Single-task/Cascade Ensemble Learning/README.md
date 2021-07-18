@@ -25,5 +25,5 @@ We used Elastic-net penalized linear regression along with SVR (EN+SVR) in the l
             Datapath       = '/path/to/the/data/folder';
             Harmonization  = 2;
             Covariate      = 0; Or 1
-            Cas_EN(Datapath,Harmonization)     
+            Cas_EN(Datapath,Harmonization,Covariate)     
         ```    
