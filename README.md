@@ -164,9 +164,9 @@ In the Multi-task learning we used different multi-task learning methods based o
          Formulations   = 0; % Or 1 Or 2 Or 3
          MTL_fun(Datapath,Harmonization,Covariate,Formulations)     
      ```
- - [Cascade Ensemble Learning](Matlab/Single-task/Cascade%20Ensemble%20Learning/) 
+ - [MTL-based MFS Harmonization](Matlab/Multi-task/MTL-based%20MFS%20Harmonization/) 
 
-    To correct for differences in features caused by imaging attwo MFSs in ADNI1 and ADNI2, we used MTL models as 6-task learning approaches for MFS adaptation.
+    To correct for differences in features caused by imaging at two MFSs in ADNI1 and ADNI2, we used MTL models as 6-task learning approaches for MFS adaptation.
     ```matlab
        % OUTPUT          : 
        % Results         : 'results','results_NC','results_MCI','results_AD','cor','MAE','cor_s','CorNC','CorMCI','CorAD','MAE_NC','MAE_MCI','MAE_AD'
