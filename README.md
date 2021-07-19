@@ -124,7 +124,7 @@ addpath('../MALSAR/utils/');
 ## Multi-Task learning
 In the Multi-task learning we used different multi-task learning methods based on least-squares loss function including multi-task Lasso (Least Lasso), Joint Feature Selection (JFS), Dirty Model (Least Dirty), and Trace-Norm Regularization (Least Trace).
 
-- [MTL-fun](Matlab/Single-task/ALL-EN)
+- [MTL-fun](Matlab/Multi-task/)
     
    - Without Harmonization
    ```matlab
