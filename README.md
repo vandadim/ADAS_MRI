@@ -172,24 +172,12 @@ In the Multi-task learning we used different multi-task learning methods based o
        % Results         : 'results','results_NC','results_MCI','results_AD','cor','MAE','cor_s','CorNC','CorMCI','CorAD','MAE_NC','MAE_MCI','MAE_AD'
        % INPUT           :
        % Datapath        : The directory containing data
-       % Harmonization   : 1- ComBat harmonization, 2- PLS-based domain adaptation  
-       % Covariate       : 0- Without considering Age as covariate, 1-With considering Age as covariate
+       % Formulations    : 0- Least Lasso, 1-Joint feature selection (JFS), 2- Dirty Model, 3- Low rank assumption (LRA)
+       %--------------------------------------------------------------------------------------------------------------------------------------------
+       %--------------------------------------------------------------------------------------------------------------------------------------------
+       Datapath       = '/path/to/the/data/folder';
+       Formulations   = 0; % Or 1 Or 2 Or 3
+       MTL_fun(Datapath,Formulations)
            
     ```
-   - [ComBat+Cas-EN](Matlab/Single-task/Cascade%20Ensemble%20Learning/)
    
-        ```matlab
-            Datapath       = '/path/to/the/data/folder';
-            Harmonization  = 1;
-            Covariate      = 0; % Or 1
-            Cas_EN(Datapath,Harmonization,Covariate)
-   
-        ```                  
-   - [PLS-Based Domain adaptation](Matlab/Single-task/Cascade%20Ensemble%20Learning/)
-
-        ```matlab     
-            Datapath       = '/path/to/the/data/folder';
-            Harmonization  = 2;
-            Covariate      = 0; % Or 1
-            Cas_EN(Datapath,Harmonization,Covariate)     
-        ```
