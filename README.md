@@ -177,7 +177,7 @@ In the Multi-task learning we used different multi-task learning methods based o
        %--------------------------------------------------------------------------------------------------------------------------------------------
        Datapath       = '/path/to/the/data/folder';
        Formulations   = 0; % Or 1 Or 2 Or 3
-       MTL_fun(Datapath,Formulations)
+       MTL_6tasks(Datapath,Formulations)
            
     ```
    
