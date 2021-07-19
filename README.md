@@ -77,7 +77,7 @@ addpath('../MALSAR/utils/');
      ```matlab
         Datapath       = '/path/to/the/data/folder';
         Harmonization  = 1;
-        Covariate      = 0; Or 1
+        Covariate      = 0; % Or 1
         ALL_EN(Datapath,Harmonization,Covariate)
    
       ```                  
@@ -86,8 +86,8 @@ addpath('../MALSAR/utils/');
      ```matlab     
          Datapath       = '/path/to/the/data/folder';
          Harmonization  = 2;
-         Covariate      = 0; Or 1
-         ALL_EN(Datapath,Harmonization)     
+         Covariate      = 0; % Or 1
+         ALL_EN(Datapath,Harmonization,Covariate)     
      ```
      
 - [Cascade Ensemble Learning](Matlab/Single-task/Cascade%20Ensemble%20Learning/) 
@@ -107,7 +107,7 @@ addpath('../MALSAR/utils/');
         ```matlab
             Datapath       = '/path/to/the/data/folder';
             Harmonization  = 1;
-            Covariate      = 0; Or 1
+            Covariate      = 0; % Or 1
             Cas_EN(Datapath,Harmonization,Covariate)
    
         ```                  
@@ -116,15 +116,15 @@ addpath('../MALSAR/utils/');
         ```matlab     
             Datapath       = '/path/to/the/data/folder';
             Harmonization  = 2;
-            Covariate      = 0; Or 1
-            Cas_EN(Datapath,Harmonization)     
+            Covariate      = 0; % Or 1
+            Cas_EN(Datapath,Harmonization,Covariate)     
         ```
 
     
 ## Multi-Task learning
 In the Multi-task learning we used different multi-task learning methods based on least-squares loss function including multi-task Lasso (Least Lasso), Joint Feature Selection (JFS), Dirty Model (Least Dirty), and Trace-Norm Regularization (Least Trace).
 
-- [MTL-fun](Matlab/Multi-task/)
+- [MTL-fun](Matlab/Multi-task/Multi-task%20Learning%20models/)
     
    - Without Harmonization
    ```matlab
@@ -135,29 +135,32 @@ In the Multi-task learning we used different multi-task learning methods based o
    % Datapath        : The directory containing data
    % Harmonization   : 0- Without data monization, 1- ComBat harmonization, 2- PLS-based domain adaptation  
    % Covariate       : 0- Without considering Age as covariate, 1-With considering Age as covariate
-   % Formulations    :
+   % Formulations    : 0- Least Lasso, 1-Joint feature selection (JFS), 2- Dirty Model, 3- Low rank assumption (LRA)
    %--------------------------------------------------------------------------------------------------------------------------------------------
    %--------------------------------------------------------------------------------------------------------------------------------------------
    Datapath       = '/path/to/the/data/folder';
    Harmonization  = 0;
    Covariate      = 0;
-   MTL_fun(Datapath,Harmonization,Covariate)
+   Formulations   = 0; % Or 1 Or 2 Or 3
+   MTL_fun(Datapath,Harmonization,Covariate,Formulations)
    
    ```
-   - [ComBat+ALL-EN](Matlab/Single-task/ALL-EN)
+   - [ComBat + MTLs](Matlab/Multi-task/Multi-task%20Learning%20models/)
    
      ```matlab
         Datapath       = '/path/to/the/data/folder';
         Harmonization  = 1;
-        Covariate      = 0; Or 1
-        ALL_EN(Datapath,Harmonization,Covariate)
+        Covariate      = 0; % Or 1
+        Formulations   = 0; % Or 1 Or 2 Or 3
+        MTL_fun(Datapath,Harmonization,Covariate,Formulations)
    
       ```                  
-   - [PLS-Based Domain adaptation+ALL-EN](Matlab/Single-task/ALL-EN)
+   - [PLS-Based Domain adaptation + MTLs](Matlab/Multi-task/Multi-task%20Learning%20models/)
 
      ```matlab     
          Datapath       = '/path/to/the/data/folder';
          Harmonization  = 2;
-         Covariate      = 0; Or 1
-         ALL_EN(Datapath,Harmonization)     
+         Covariate      = 0; % Or 1
+         Formulations   = 0; % Or 1 Or 2 Or 3
+         MTL_fun(Datapath,Harmonization,Covariate,Formulations)     
      ```
