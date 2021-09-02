@@ -18,7 +18,7 @@
 % Covariate       : 0- Without considering Age as covariate, 1-With considering Age as covariate
 % Formulations    : 0- Least Lasso, 1-Joint feature selection (JFS), 2- Dirty Model, 3- Low rank assumption (LRA)
 
-% -------------------------------------------------------------
+% --------------------------EXAMPLE--------------------------------
 % Use multi-task model for predicting without considering harmonization step
 % and effect of the biological covariate.
 % Datapath       = '/path/to/the/data/folder';
