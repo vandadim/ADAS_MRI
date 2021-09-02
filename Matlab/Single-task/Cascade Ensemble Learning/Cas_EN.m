@@ -1,3 +1,31 @@
+% Generating Single-task learning model for regression
+% Vandad imani 2020 - 2021
+% University of Eastern Finland, Finland (2020 - 2021)
+% --------------------------------------------------------------
+% Permission to use, copy, modify, and distribute this software 
+% for any purpose and without fee is hereby granted, provided 
+% that the above copyright notice appear in all copies. The 
+% author and University of Eastern Finland make no representations 
+% about the suitability of this software for any purpose.  
+% It is provided "as is" without express or implied warranty.
+% -------------------------------------------------------------
+% OUTPUT : Results available for 12, 24, and 36 Months
+% Correlation and MAE between predicted ADAS and observed ADAS(NC,MCI and AD)
+% Predicted value for each outer loop
+% INPUT:
+% Path          : The directory containing data
+% Harmonization : 1- ComBat harmonization, 2- PLS-based domain adaptation
+% Covariate     : 0- Without considering Age as covariate, 1-With considering Age as covariate
+
+% -------------------------------------------------------------
+% Use for predicting without considering harmonization step
+% and effect of the biological covariate.
+% Datapath       = '/path/to/the/data/folder';
+% Harmonization  = 0;
+% Covariate      = 0;
+% Cas_EN(Datapath,Harmonization,Covariate)
+%
+% -----------------------------------------------------------
 function Cas_EN(Path,Harmonization,Covariate)
 if ~exist('Harmonization','var') || Harmonization~=1 || Harmonization~=2
     error('Error. Harmonization must be 1 (ComBat) or 2 (PLS)');
@@ -103,10 +131,7 @@ for Month = 1:size(Months,2)
             [~,~,XS,~] = plsregress(fData,Response_Variable,17); % Number of component(Here= 17) can be find in the inner CV loop
             XS_all{it}    = XS;
         end
-    end
-    
-    
-    
+    end    
     for h =1:10
         h
         balancd_CV1 = balanced_crossval(NoYlabel,kf,[]);
@@ -130,7 +155,7 @@ for Month = 1:size(Months,2)
                 
                 train_set = XS_all{it}(train1_indx,:);
                 te_set    = XS_all{it}(test1_indx,:);
-                %             [nTrainSet_ncv, nTestSet_ncv] = normalizeInput(train_set, te_set);
+                
                 nTrainSet_ncv = zscore(train_set);
                 nTestSet_ncv = zscore(te_set);
                 model = svmtrain(train1_label,nTrainSet_ncv,'-s 4');
