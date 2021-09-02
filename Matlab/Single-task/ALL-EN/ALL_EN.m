@@ -1,3 +1,31 @@
+% Generating Single-task learning model for regression
+% Vandad imani 2020 - 2021
+% University of Eastern Finland, Finland (2020 - 2021)
+% --------------------------------------------------------------
+% Permission to use, copy, modify, and distribute this software 
+% for any purpose and without fee is hereby granted, provided 
+% that the above copyright notice appear in all copies. The 
+% author and University of Eastern Finland make no representations 
+% about the suitability of this software for any purpose.  
+% It is provided "as is" without express or implied warranty.
+% -------------------------------------------------------------
+% OUTPUT : Results available for 12, 24, and 36 Months
+% Correlation and MAE between predicted ADAS and observed ADAS(NC,MCI and AD)
+% Predicted value for each outer loop
+% INPUT:
+% Path          : The directory containing data
+% Harmonization : 0- Without data harmonization, 1- ComBat harmonization, 2- PLS-based domain adaptation
+% Covariate     : 0- Without considering Age as covariate, 1-With considering Age as covariate
+
+% -------------------------------------------------------------
+% Use for predicting without considering harmonization step
+% and effect of the biological covariate.
+% Datapath       = '/path/to/the/data/folder';
+% Harmonization  = 0;
+% Covariate      = 0;
+% ALL_EN(Datapath,Harmonization,Covariate)
+%
+% -----------------------------------------------------------
 function ALL_EN(Path,Harmonization,Covariate)
 if ~exist('Harmonization','var')
     Harmonization = 0;
@@ -143,8 +171,8 @@ for Month = 1:size(Months,2)
             INDX        = [INDX;test1_indx'];
             
         end
-        act_label       = act_labeln;%Normalize_Fcn2(act_labeln,Meanylabel,Stdylabel);
-        pred_label      = pred_labeln;%Normalize_Fcn2(pred_labeln,Meanylabel,Stdylabel);
+        act_label       = act_labeln;
+        pred_label      = pred_labeln;
         
         [K1,L1]             = ind2sub(size(DX_Label),DX_Label==1);
         [K2,L2]             = ind2sub(size(DX_Label),DX_Label==2);
