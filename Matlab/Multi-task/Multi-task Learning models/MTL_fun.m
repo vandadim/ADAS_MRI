@@ -1,3 +1,33 @@
+% Generating Multi-task learning model for regression
+% Vandad imani 2020 - 2021
+% University of Eastern Finland, Finland (2020 - 2021)
+% --------------------------------------------------------------
+% Permission to use, copy, modify, and distribute this software 
+% for any purpose and without fee is hereby granted, provided 
+% that the above copyright notice appear in all copies. The 
+% author and University of Eastern Finland make no representations 
+% about the suitability of this software for any purpose.  
+% It is provided "as is" without express or implied warranty.
+% -------------------------------------------------------------
+% OUTPUT : Results available for 12, 24, and 36 Months
+% Correlation and MAE between predicted ADAS and observed ADAS(NC,MCI and AD)
+% Predicted value for each outer loop
+% INPUT:
+% Path            : The directory containing data
+% Harmonization   : 0- Without data monization, 1- ComBat harmonization, 2- PLS-based domain adaptation  
+% Covariate       : 0- Without considering Age as covariate, 1-With considering Age as covariate
+% Formulations    : 0- Least Lasso, 1-Joint feature selection (JFS), 2- Dirty Model, 3- Low rank assumption (LRA)
+
+% -------------------------------------------------------------
+% Use multi-task model for predicting without considering harmonization step
+% and effect of the biological covariate.
+% Datapath       = '/path/to/the/data/folder';
+% Harmonization  = 0;
+% Covariate      = 0;
+% Formulations   = 0; % Or 1 Or 2 Or 3
+% MTL_fun(Datapath,Harmonization,Covariate,Formulations)
+% -----------------------------------------------------------
+
 function MTL_fun(Path,Harmonization,Covariate,Formulations)
 if ~exist('Harmonization','var')
     Harmonization = 0;
@@ -107,7 +137,7 @@ for Month = 1:size(Months,2)
         XS_all              = XS1;
     end
     %XS_all = zscore(XS_all,[ ],2);
-    XS_all = [XS_all ones(size(XS_all, 1), 1)];
+    XS_all = [XS_all ones(size(XS_all, 1), 1)]; % Add a bias column to the data for each task to learn the bias
     %% Learning stage
     
     for h =1:10
