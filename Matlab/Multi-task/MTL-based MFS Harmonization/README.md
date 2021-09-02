@@ -11,7 +11,8 @@
         % Formulations    : 0- Least Lasso, 1-Joint feature selection (JFS), 2- Dirty Model, 3- Low rank assumption (LRA)
         %--------------------------------------------------------------------------------------------------------------------------------------------
         %--------------------------------------------------------------------------------------------------------------------------------------------
-        Datapath       = '/path/to/the/data/folder';
-        Formulations   = 0; % Or 1 Or 2 Or 3
-        MTL_6tasks(Datapath,Formulations)
+        
+          Datapath       = '/path/to/the/data/folder';
+          Formulations   = 0; % Or 1 Or 2 Or 3
+          MTL_6tasks(Datapath,Formulations)
         ```
