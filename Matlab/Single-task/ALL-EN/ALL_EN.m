@@ -17,7 +17,7 @@
 % Harmonization : 0- Without data harmonization, 1- ComBat harmonization, 2- PLS-based domain adaptation
 % Covariate     : 0- Without considering Age as covariate, 1-With considering Age as covariate
 
-% -------------------------------------------------------------
+% -----------------------EXAMPLE-------------------------
 % Use for predicting without considering harmonization step
 % and effect of the biological covariate.
 % Datapath       = '/path/to/the/data/folder';
