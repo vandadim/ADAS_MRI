@@ -7,7 +7,7 @@ In the Multi-task learning we used different multi-task learning methods based o
    ```matlab
    % OUTPUT          : 
    % Results         : 'results','results_NC','results_MCI','results_AD','cor','MAE','cor_s','CorNC','CorMCI','CorAD','MAE_NC','MAE_MCI','MAE_AD', ...
-                        'Fold_NC_H','Fold_MCI_H','Fold_AD_H'
+   %                     'Fold_NC_H','Fold_MCI_H','Fold_AD_H'
    % INPUT           :
    % Datapath        : The directory containing data
    % Harmonization   : 0- Without data monization, 1- ComBat harmonization, 2- PLS-based domain adaptation  
