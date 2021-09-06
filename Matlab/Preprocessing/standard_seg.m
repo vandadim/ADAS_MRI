@@ -19,12 +19,13 @@
 % nRun          : Number of iterations
 
 
-function standard_seg(dataPath, matFilePath, outPath, nRun)
+function standard_seg(dataPath, matFilePath, outPath)
 
 %% Original Values
 imgs_dir = rdir(dataPath);
 numImg   = length(imgs_dir);
 jobfile  = importdata (matFilePath);
+nRun     = 1;
 jobs     = repmat(jobfile, 1, nRun);
 inputs   = cell(0, nRun);
 
