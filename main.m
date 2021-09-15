@@ -12,22 +12,6 @@
 % about the suitability of this software for any purpose.  
 % It is provided "as is" without express or implied warranty.
 % -------------------------------------------------------------
-% OUTPUT : Results available for 12, 24, and 36 Months
-
-% Correlation and MAE between predicted ADAS and observed ADAS(NC,MCI and AD)
-% Predicted value for each outer loop
-
-% INPUT:
-
-% Path            : The directory containing data
-% Formulations    : 0- Least Lasso, 1-Joint feature selection (JFS), 2- Dirty Model, 3- Low rank assumption (LRA)
-
-% --------------------------EXAMPLE--------------------------------
-% Use MTL-based Harmonization for predicting 
-% Datapath       = '/path/to/the/data/folder';
-% Formulations   = 0; % Or 1 Or 2 Or 3
-% MTL_6tasks(Datapath,Formulations)
-% -----------------------------------------------------------
 
 %% Preprocessing 
 % Preprocessing Example
